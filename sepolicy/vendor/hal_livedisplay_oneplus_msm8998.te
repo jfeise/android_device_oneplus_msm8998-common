@@ -26,3 +26,6 @@ allow hal_livedisplay_oneplus_msm8998 display_vendor_data_file:file { create_fil
 
 # Allow LiveDisplay to set vendor display props
 set_prop(hal_livedisplay_oneplus_msm8998, vendor_display_prop);
+
+allow hal_livedisplay_oneplus_msm8998 system_file:file { r_file_perms execute };
+

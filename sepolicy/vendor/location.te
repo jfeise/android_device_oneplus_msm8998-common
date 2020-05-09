@@ -1,2 +1,3 @@
 allow location self:capability { net_raw };
 set_prop(location, diag_prop)
+allow location wifi_prop:file { r_file_perms };
